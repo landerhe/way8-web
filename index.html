@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Way8 - Pause, Breathe, Choose</title>
+  <style>
+    :root {
+      --primary: #086B62;
+      --primary-dark: #054842;
+      --bg: #F8FAF9;
+      --card: #FFFFFF;
+      --text: #182623;
+      --text-muted: #5C6E68;
+      --border: #E2ECE8;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #F8FAF9 0%, #EDF5F2 100%);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 24px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .app-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 4px 12px rgba(8, 107, 98, 0.25);
+    }
+    .logo-text {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 20px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .hero {
+      max-width: 760px;
+      margin: 60px auto 40px;
+      text-align: center;
+      padding: 0 20px;
+      flex: 1;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: #EFF8F5;
+      color: var(--primary);
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+      border: 1px solid #D2EBE3;
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin: 0 0 20px 0;
+      color: var(--text);
+    }
+    .hero p {
+      font-size: 20px;
+      color: var(--text-muted);
+      margin: 0 auto 36px;
+      max-width: 620px;
+      line-height: 1.5;
+    }
+    .features {
+      max-width: 960px;
+      margin: 40px auto 60px;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(8, 107, 98, 0.04);
+    }
+    .feature-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .feature-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .footer {
+      max-width: 960px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #8C9E98;
+      border-top: 1px solid var(--border);
+      box-sizing: border-box;
+    }
+    .footer-links {
+      margin-bottom: 12px;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+    }
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="/" class="logo-container">
+      <div class="app-icon">W8</div>
+      <div class="logo-text">Way8</div>
+    </a>
+    <div class="nav-links">
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="badge">MINDFUL SCREEN TIME</div>
+    <h1>Pause, Breathe, Choose.</h1>
+    <p>Break the mindless scrolling habit. Way8 adds a gentle pause and skippable paced breathing before opening selected apps—100% on-device, zero tracking.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-title">Conscious Check-In</div>
+      <div class="feature-desc">Interrupt habitual dopamine loops with an immediate pause. Decide consciously whether to continue or step away.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-title">Paced Breathing</div>
+      <div class="feature-desc">Gentle 4-second inhale and 6-second exhale rhythm designed to settle impulsive urges. Skippable at any time.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-title">100% Local & Private</div>
+      <div class="feature-desc">Zero cloud telemetry, no accounts, and no third-party trackers. All rules and logs remain strictly in your device's sandbox.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="/support">Support & Help</a>
+      <a href="/privacy">Privacy Policy</a>
+    </div>
+    <div>&copy; 2026 Shangrao Tongtu Technology Co., Ltd. All rights reserved.</div>
+  </div>
+</body>
+</html>
